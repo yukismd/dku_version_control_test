@@ -36,14 +36,24 @@
             {
               "sourceSmartName": "unlabeled_customers",
               "targetSmartName": "test_input_unlabelled_customers"
-            },
-            {
-              "sourceSmartName": "revenue_loss",
-              "targetSmartName": "test_reference_revenue_loss"
             }
           ],
-          "compares": [],
-          "builds": [],
+          "compares": [
+            {
+              "resultSmartName": "revenue_loss",
+              "expectedSmartName": "test_reference_revenue_loss",
+              "compareAllColumns": true,
+              "equalityColumns": [],
+              "contentComparison": true
+            }
+          ],
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "revenue_loss",
+              "partitionsSpec": ""
+            }
+          ],
           "jobType": "RECURSIVE_BUILD",
           "autoUpdateSchemaBeforeEachRecipeRun": false,
           "stopAtFlowZoneBoundary": false,
