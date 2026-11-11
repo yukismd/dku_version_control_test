@@ -1,0 +1,69 @@
+{
+  "type": "STANDARD",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "backendEnabled": true,
+    "enableJavascriptModules": false,
+    "autoStartBackend": false,
+    "hideJSSecurityPanel": false,
+    "hideWebAppConfig": false,
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "nbProcesses": 1,
+    "backendAPIAccessEnabled": false,
+    "backendFramework": "FLASK",
+    "libraries": [
+      "jquery",
+      "dataiku"
+    ],
+    "runAs": "yuki.shimada@dataiku.com",
+    "infra": {
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaTargetMemoryPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "podDisruptionBudget": {
+        "enable": false,
+        "isMaxUnavailable": false,
+        "minAvailable": "50%"
+      },
+      "deploymentModifier": {
+        "config": {}
+      }
+    },
+    "forceAuthentication": false
+  },
+  "config": {},
+  "name": "WebApp1",
+  "apiKey": "e:AES:X3:KjyzkBCPe8Vx/IPgp6zUKvgHp4Kgn6DjWwafkbHAF4oaJHkH9HekN2V7otz1shQFhwzgOtUWCYCg0NLB0TCDo4Qvlg\u003d\u003d",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "francois.sergot"
+    },
+    "lastModifiedOn": 1733833537070,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}

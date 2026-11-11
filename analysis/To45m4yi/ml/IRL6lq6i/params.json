@@ -1,0 +1,1955 @@
+{
+  "taskType": "CLUSTERING",
+  "guessPolicy": "KMEANS",
+  "preprocessing": {
+    "reduce": {
+      "enable": false,
+      "disable": true,
+      "kept_variance": 0.0
+    },
+    "outliers": {
+      "method": "CLUSTER",
+      "min_cum_ratio": 0.01,
+      "min_n": 33
+    },
+    "per_feature": {
+      "Account_Length": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Account_Length",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Area_Code": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Area_Code",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Churn": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Churn",
+        "role": "REJECT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "CustServ_Calls": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "CustServ_Calls",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Day_Calls": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Day_Calls",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Day_Charge": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Day_Charge",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Day_Mins": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Day_Mins",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Eve_Calls": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Eve_Calls",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Eve_Charge": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Eve_Charge",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Eve_Mins": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Eve_Mins",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Intl_Calls": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Intl_Calls",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Intl_Charge": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Intl_Charge",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": true,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Intl_Mins": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Intl_Mins",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Intl_Plan": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
+        "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
+        "name": "Intl_Plan",
+        "role": "INPUT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Boolean"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Night_Calls": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Night_Calls",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Night_Charge": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Night_Charge",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Night_Mins": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Night_Mins",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Phone": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
+        "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
+        "name": "Phone",
+        "role": "REJECT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text"
+        },
+        "autoReason": "REJECT_IDENTIFIER",
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "State": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
+        "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
+        "name": "State",
+        "role": "INPUT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": true,
+          "previousSettings": {
+            "category_handling": "DUMMIFY",
+            "missing_handling": "IMPUTE",
+            "missing_impute_with": "MODE",
+            "dummy_clip": "MAX_NB_CATEGORIES",
+            "cumulative_proportion": 0.95,
+            "min_samples": 10,
+            "max_nb_categories": 100,
+            "max_cat_safety": 200,
+            "nb_bins_hashing": 1048576,
+            "hash_whole_categories": true,
+            "dummy_drop": "NONE",
+            "impact_method": "M_ESTIMATOR",
+            "impact_m": 10,
+            "impact_kfold": true,
+            "impact_kfold_k": 5,
+            "impact_kfold_seed": 1337,
+            "ordinal_order": "COUNT",
+            "ordinal_ascending": false,
+            "ordinal_default_mode": "HIGHEST",
+            "ordinal_default_value": 0,
+            "frequency_default_mode": "EXPLICIT",
+            "frequency_default_value": 0.0,
+            "frequency_normalized": true,
+            "name": "State",
+            "role": "INPUT",
+            "type": "CATEGORY",
+            "customHandlingCode": "",
+            "customProcessorWantsMatrix": false,
+            "sendToInput": "main"
+          },
+          "recordedMeaning": "USStateMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Total_Charge": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "Total_Charge",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "VMail_Message": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "VMail_Message",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "VMail_Plan": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
+        "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
+        "name": "VMail_Plan",
+        "role": "INPUT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Boolean"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "total_Mins": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "keep_regular": false,
+        "rescaling": "AVGSTD",
+        "monotonic": "NONE",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
+        "name": "total_Mins",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      }
+    },
+    "feature_generation": {
+      "pairwise_linear": {
+        "behavior": "DISABLED"
+      },
+      "polynomial_combinations": {
+        "behavior": "DISABLED"
+      },
+      "manual_interactions": {
+        "interactions": []
+      },
+      "numericals_clustering": {
+        "k": 0,
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      },
+      "categoricals_count_transformer": {
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      }
+    }
+  },
+  "modeling": {
+    "db_scan_clustering": {
+      "epsilon": [],
+      "min_sample_ratio": 0.0,
+      "enabled": false
+    },
+    "hdb_scan_clustering": {
+      "min_cluster_size_ratio": [
+        0.01,
+        0.03,
+        0.1,
+        0.3
+      ],
+      "enabled": false
+    },
+    "spectral_clustering": {
+      "enabled": false,
+      "affinity_rbf": false,
+      "affinity_nearest_neighbors": true,
+      "affinity_sigmoid": false,
+      "affinity_polynomial": false,
+      "gamma": [],
+      "coef0": 0.0,
+      "seed": 0,
+      "k": [
+        5,
+        6,
+        7
+      ],
+      "useClusterRange": false,
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3
+      }
+    },
+    "ward_clustering": {
+      "enabled": false,
+      "k": [
+        3,
+        5
+      ],
+      "useClusterRange": false,
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3
+      }
+    },
+    "kmeans_clustering": {
+      "enabled": true,
+      "seed": 0,
+      "n_jobs": 2,
+      "allow_sparse_matrices": false,
+      "n_init": 1,
+      "k": [
+        6,
+        7,
+        8
+      ],
+      "useClusterRange": false,
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3
+      }
+    },
+    "mini_batch_kmeans_clustering": {
+      "enabled": false,
+      "seed": 0,
+      "allow_sparse_matrices": false,
+      "n_init": 1,
+      "k": [
+        3,
+        5
+      ],
+      "useClusterRange": false,
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3
+      }
+    },
+    "gmm_clustering": {
+      "enabled": false,
+      "max_iterations": 0,
+      "seed": 0,
+      "k": [],
+      "useClusterRange": false,
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3
+      }
+    },
+    "mllib_kmeans_clustering": {
+      "enabled": false,
+      "seed": 1337,
+      "max_iterations": 0,
+      "k": [],
+      "useClusterRange": false,
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3
+      }
+    },
+    "mllib_gaussian_mixture_clustering": {
+      "seed": 1337,
+      "enabled": false,
+      "max_iterations": 0,
+      "k": [],
+      "useClusterRange": false,
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3
+      }
+    },
+    "h2o_kmeans": {
+      "enabled": false,
+      "seed": 1337,
+      "max_iterations": 0,
+      "k": [],
+      "useClusterRange": false,
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3
+      }
+    },
+    "two_step": {
+      "kmeans_k": 50,
+      "n_clusters": 5,
+      "seed": 1337,
+      "max_iterations": 30,
+      "enabled": false
+    },
+    "isolation_forest": {
+      "k": 2,
+      "enabled": false,
+      "n_estimators": 100,
+      "max_samples": 0.5,
+      "max_features": 1.0,
+      "contamination": 0.05,
+      "use_auto_contamination": false,
+      "bootstrap": true,
+      "max_anomalies": 100,
+      "n_samples": 256,
+      "max_depth": 15,
+      "seed": 1337,
+      "allow_sparse_matrices": false,
+      "n_jobs": 1
+    },
+    "vertica_kmeans_clustering": {
+      "enabled": false,
+      "k": [
+        5
+      ],
+      "epsilon": [
+        0.0001
+      ],
+      "max_iterations": 50
+    },
+    "metrics": {
+      "evaluationMetric": "SILHOUETTE"
+    },
+    "custom_python": [],
+    "custom_mllib": []
+  },
+  "sampling": {
+    "extractBeforePrepare": true,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "ascending": true,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "instanceIdRefresher": 0
+  },
+  "id": "IRL6lq6i",
+  "initiator": "admin",
+  "diagnosticsSettings": {
+    "enabled": true,
+    "settings": [
+      {
+        "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODELING_PARAMETERS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_RUNTIME",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_TRAINING_OVERFIT",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_ML_ASSERTIONS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_ABNORMAL_PREDICTIONS_DETECTION",
+        "enabled": true
+      }
+    ]
+  },
+  "name": "Cluster data",
+  "backendType": "PY_MEMORY",
+  "maxConcurrentModelTraining": 2,
+  "gpuConfig": {
+    "params": {
+      "useGpu": true,
+      "gpuList": [
+        0
+      ],
+      "perGPUMemoryFraction": 0.5,
+      "gpuAllowGrowth": false
+    },
+    "disabledCapabilities": []
+  },
+  "envSelection": {
+    "envMode": "USE_BUILTIN_MODE"
+  },
+  "containerSelection": {
+    "containerMode": "INHERIT"
+  },
+  "sparkParams": {
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkUseGlobalMetastore": false,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "sparkRepartitionNonHDFS": 1,
+    "pipelineAllowStart": true,
+    "pipelineAllowMerge": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT"
+  },
+  "sparkCheckpoint": "NONE",
+  "predictionDisplayScript": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {},
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": -1,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 30000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "type": "global_search"
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "predictionDisplayCharts": [
+    {
+      "def": {
+        "type": "grouped_columns",
+        "name": "Avg. of Total_Charge by cluster_labels",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "cluster_labels",
+            "type": "ALPHANUM",
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "NO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              },
+              {
+                "label": "Average of Total_Charge, descending",
+                "measureIdx": 0,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Average of Total_Charge, ascending",
+                "measureIdx": 0,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              }
+            ],
+            "sort": {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
+        "genericDimension1": [],
+        "genericMeasures": [
+          {
+            "column": "Total_Charge",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "percentile": 0.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "responsiveTextAreaFill": 0,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "labelTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "colorRules": []
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaDimensionPair": [
+          {
+            "uaXDimension": [],
+            "uaYDimension": []
+          }
+        ],
+        "uaSize": [],
+        "uaColor": [],
+        "uaShape": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "geoLayers": [
+          {
+            "geometry": [],
+            "colorOptions": {
+              "ccScaleMode": "NORMAL",
+              "paletteType": "CONTINUOUS",
+              "numQuantizeSteps": 5,
+              "paletteMiddleValue": 0.0,
+              "heatDensityMapIntensity": 0.5,
+              "heatDensityMapRadius": 0.5,
+              "singleColor": "#659a88",
+              "transparency": 0.75,
+              "colorPalette": "default",
+              "customPalette": {
+                "id": "__dku_custom__",
+                "name": "Custom palette",
+                "colors": [],
+                "values": [],
+                "fixedValues": false
+              },
+              "customColors": {}
+            },
+            "uaColor": []
+          }
+        ],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "xAxisFormatting": {
+          "showAxisTitle": false,
+          "ticksConfig": {
+            "mode": "INTERVAL"
+          },
+          "customExtent": {},
+          "isLogScale": false,
+          "includeZero": true
+        },
+        "yAxesFormatting": [
+          {
+            "showAxisTitle": false,
+            "ticksConfig": {
+              "mode": "INTERVAL"
+            },
+            "customExtent": {},
+            "isLogScale": false,
+            "includeZero": true
+          }
+        ],
+        "smoothing": true,
+        "showLegend": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.5,
+        "tooltipOptions": {
+          "display": true
+        },
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "valuesInChartDisplayOptions": {
+          "displayValues": false,
+          "displayPieLabelsOrValues": false,
+          "displayMode": "VALUES"
+        },
+        "chartHeight": 0,
+        "singleXAxis": false,
+        "multiTooltips": false,
+        "animationFrameDuration": 0,
+        "animationRepeat": true,
+        "colorOptions": {
+          "ccScaleMode": "NORMAL",
+          "paletteType": "CONTINUOUS",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5,
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "customColors": {}
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 50.0
+        },
+        "scatterZoomOptions": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "translate": [
+            0.0,
+            0.0
+          ],
+          "chartWidth": 0.0,
+          "enabled": true,
+          "persisted": true
+        },
+        "linesZoomOptions": {
+          "displayBrush": true,
+          "enabled": true,
+          "persisted": true
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false,
+          "connectPoints": {
+            "enabled": false,
+            "splitBy": "COLOR",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            }
+          },
+          "optimizeRendering": false,
+          "regression": {
+            "show": false,
+            "displayFormula": true,
+            "type": "LINEAR",
+            "labelPosition": "INSIDE_END",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            },
+            "textFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            }
+          },
+          "numberOfRecords": 1000000.0
+        },
+        "scatterMPOptions": {
+          "connectPoints": {
+            "enabled": false,
+            "splitBy": "COLOR",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            }
+          },
+          "optimizeRendering": false,
+          "pairColorOptions": {
+            "singleColor": "#659a88",
+            "transparency": 0.75,
+            "colorPalette": "default",
+            "customPalette": {
+              "id": "__dku_custom__",
+              "name": "Custom palette",
+              "colors": [],
+              "values": [],
+              "fixedValues": false
+            },
+            "customColors": {}
+          },
+          "numberOfRecords": 1000000.0
+        },
+        "mapOptions": {
+          "tilesLayer": "mapquest-std",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "radarOptions": {
+          "filled": false,
+          "polygonsSource": "MEASURES",
+          "lineStyle": {
+            "width": 2.0,
+            "type": "SOLID"
+          }
+        },
+        "sankeyOptions": {
+          "curveness": 0.5,
+          "linkColorVariant": "GRADIENT"
+        },
+        "gaugeOptions": {
+          "displayPointer": false
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABH0lEQVRoQ+1ZQQ7CIBAsR79gND35EO8aX2N9g/oaU+PVh3gyGt9hamKCK3W3ZAkg0zNQZmdndgFTFfaZwvBWAPzvjAdnuN4cz3YQr9vFPGZQAVg7+mA4xZSerNuZzfR9v7z4Mp8Fw5qb1FzLN+j2PKdpaW5Scy0JYPq/bo5dGZIAPG0OYwrmtls9JADpmGCA66Y9VcaMuBorYZjb5BDg3FreDAMw0cqbFTDsqMNcGiKlf0SAC15WGtaQBwB32SKKZISyJNoXOY6qNR4xyhIAezg+NAwN93VQMK3PY1iI1hKmBdP67iFQh119uEgrMC2Y1it5RNnC9L+ajo9OS8wKNAwNQ8O0CegzI+k411uz153WkFvC3MYGfxBPLSDFAX4CTfmAR6eya1kAAAAASUVORK5CYII=",
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT",
+        "id": "56440b5f"
+      }
+    },
+    {
+      "def": {
+        "type": "scatter",
+        "variant": "normal",
+        "name": "New chart",
+        "userEditedName": false,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [
+          {
+            "column": "Day_Charge",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
+        "uaYDimension": [
+          {
+            "column": "Night_Charge",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
+        "uaDimensionPair": [
+          {
+            "uaXDimension": [],
+            "uaYDimension": []
+          }
+        ],
+        "uaSize": [],
+        "uaColor": [
+          {
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0,
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "column": "cluster_labels",
+            "type": "ALPHANUM"
+          }
+        ],
+        "uaShape": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "geoLayers": [
+          {
+            "geometry": [],
+            "colorOptions": {
+              "ccScaleMode": "NORMAL",
+              "paletteType": "CONTINUOUS",
+              "numQuantizeSteps": 5,
+              "paletteMiddleValue": 0.0,
+              "heatDensityMapIntensity": 0.5,
+              "heatDensityMapRadius": 0.5,
+              "singleColor": "#659a88",
+              "transparency": 0.75,
+              "colorPalette": "default",
+              "customPalette": {
+                "id": "__dku_custom__",
+                "name": "Custom palette",
+                "colors": [],
+                "values": [],
+                "fixedValues": false
+              },
+              "customColors": {}
+            },
+            "uaColor": []
+          }
+        ],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "xAxisFormatting": {
+          "showAxisTitle": false,
+          "ticksConfig": {
+            "mode": "INTERVAL"
+          },
+          "customExtent": {},
+          "isLogScale": false,
+          "includeZero": true
+        },
+        "yAxesFormatting": [
+          {
+            "showAxisTitle": false,
+            "ticksConfig": {
+              "mode": "INTERVAL"
+            },
+            "customExtent": {},
+            "isLogScale": false,
+            "includeZero": true
+          }
+        ],
+        "smoothing": true,
+        "showLegend": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.5,
+        "tooltipOptions": {
+          "display": true
+        },
+        "hexbinRadius": 20,
+        "hexbinNumber": 0,
+        "valuesInChartDisplayOptions": {
+          "displayValues": false,
+          "displayPieLabelsOrValues": false,
+          "displayMode": "VALUES"
+        },
+        "chartHeight": 0,
+        "singleXAxis": false,
+        "multiTooltips": false,
+        "animationFrameDuration": 0,
+        "animationRepeat": true,
+        "colorOptions": {
+          "ccScaleMode": "NORMAL",
+          "paletteType": "CONTINUOUS",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5,
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "customColors": {}
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 50.0
+        },
+        "scatterZoomOptions": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "translate": [
+            0.0,
+            0.0
+          ],
+          "chartWidth": 0.0,
+          "enabled": true,
+          "persisted": true
+        },
+        "linesZoomOptions": {
+          "displayBrush": true,
+          "enabled": true,
+          "persisted": true
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false,
+          "connectPoints": {
+            "enabled": false,
+            "splitBy": "COLOR",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            }
+          },
+          "optimizeRendering": false,
+          "regression": {
+            "show": false,
+            "displayFormula": true,
+            "type": "LINEAR",
+            "labelPosition": "INSIDE_END",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            },
+            "textFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            }
+          },
+          "numberOfRecords": 1000000.0
+        },
+        "scatterMPOptions": {
+          "connectPoints": {
+            "enabled": false,
+            "splitBy": "COLOR",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            }
+          },
+          "optimizeRendering": false,
+          "pairColorOptions": {
+            "singleColor": "#659a88",
+            "transparency": 0.75,
+            "colorPalette": "default",
+            "customPalette": {
+              "id": "__dku_custom__",
+              "name": "Custom palette",
+              "colors": [],
+              "values": [],
+              "fixedValues": false
+            },
+            "customColors": {}
+          },
+          "numberOfRecords": 1000000.0
+        },
+        "mapOptions": {
+          "tilesLayer": "mapquest-std",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "radarOptions": {
+          "filled": false,
+          "polygonsSource": "MEASURES",
+          "lineStyle": {
+            "width": 2.0,
+            "type": "SOLID"
+          }
+        },
+        "sankeyOptions": {
+          "curveness": 0.5,
+          "linkColorVariant": "GRADIENT"
+        },
+        "gaugeOptions": {
+          "displayPointer": false
+        },
+        "thumbnailData": "data:image/png;base64,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",
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT",
+        "id": "40fc2b62"
+      }
+    },
+    {
+      "def": {
+        "type": "grouped_columns",
+        "name": "Avg. of Day_Charge by cluster_labels",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "cluster_labels",
+            "type": "ALPHANUM",
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "NO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              },
+              {
+                "label": "Average of Day_Charge, descending",
+                "measureIdx": 0,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Average of Day_Charge, ascending",
+                "measureIdx": 0,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Average of Eve_Charge, descending",
+                "measureIdx": 1,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Average of Eve_Charge, ascending",
+                "measureIdx": 1,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Average of Night_Charge, descending",
+                "measureIdx": 2,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Average of Night_Charge, ascending",
+                "measureIdx": 2,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              }
+            ],
+            "sort": {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
+        "genericDimension1": [],
+        "genericMeasures": [
+          {
+            "column": "Day_Charge",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "percentile": 0.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "responsiveTextAreaFill": 0,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "labelTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "colorRules": []
+          },
+          {
+            "column": "Eve_Charge",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "percentile": 0.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "responsiveTextAreaFill": 0,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "labelTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "colorRules": []
+          },
+          {
+            "column": "Night_Charge",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "percentile": 0.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "responsiveTextAreaFill": 0,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "labelTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "colorRules": []
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaDimensionPair": [
+          {
+            "uaXDimension": [],
+            "uaYDimension": []
+          }
+        ],
+        "uaSize": [],
+        "uaColor": [],
+        "uaShape": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "geoLayers": [
+          {
+            "geometry": [],
+            "colorOptions": {
+              "ccScaleMode": "NORMAL",
+              "paletteType": "CONTINUOUS",
+              "numQuantizeSteps": 5,
+              "paletteMiddleValue": 0.0,
+              "heatDensityMapIntensity": 0.5,
+              "heatDensityMapRadius": 0.5,
+              "singleColor": "#659a88",
+              "transparency": 0.75,
+              "colorPalette": "default",
+              "customPalette": {
+                "id": "__dku_custom__",
+                "name": "Custom palette",
+                "colors": [],
+                "values": [],
+                "fixedValues": false
+              },
+              "customColors": {}
+            },
+            "uaColor": []
+          }
+        ],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "xAxisFormatting": {
+          "showAxisTitle": false,
+          "ticksConfig": {
+            "mode": "INTERVAL"
+          },
+          "customExtent": {},
+          "isLogScale": false,
+          "includeZero": true
+        },
+        "yAxesFormatting": [
+          {
+            "showAxisTitle": false,
+            "ticksConfig": {
+              "mode": "INTERVAL"
+            },
+            "customExtent": {},
+            "isLogScale": false,
+            "includeZero": true
+          }
+        ],
+        "smoothing": true,
+        "showLegend": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.5,
+        "tooltipOptions": {
+          "display": true
+        },
+        "hexbinRadius": 20,
+        "hexbinNumber": 0,
+        "valuesInChartDisplayOptions": {
+          "displayValues": false,
+          "displayPieLabelsOrValues": false,
+          "displayMode": "VALUES"
+        },
+        "chartHeight": 0,
+        "singleXAxis": false,
+        "multiTooltips": false,
+        "animationFrameDuration": 0,
+        "animationRepeat": true,
+        "colorOptions": {
+          "ccScaleMode": "NORMAL",
+          "paletteType": "CONTINUOUS",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5,
+          "singleColor": "#659a88",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "customColors": {}
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 50.0
+        },
+        "scatterZoomOptions": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "translate": [
+            0.0,
+            0.0
+          ],
+          "chartWidth": 0.0,
+          "enabled": true,
+          "persisted": true
+        },
+        "linesZoomOptions": {
+          "displayBrush": true,
+          "enabled": true,
+          "persisted": true
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false,
+          "connectPoints": {
+            "enabled": false,
+            "splitBy": "COLOR",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            }
+          },
+          "optimizeRendering": false,
+          "regression": {
+            "show": false,
+            "displayFormula": true,
+            "type": "LINEAR",
+            "labelPosition": "INSIDE_END",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            },
+            "textFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            }
+          },
+          "numberOfRecords": 1000000.0
+        },
+        "scatterMPOptions": {
+          "connectPoints": {
+            "enabled": false,
+            "splitBy": "COLOR",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            }
+          },
+          "optimizeRendering": false,
+          "pairColorOptions": {
+            "singleColor": "#659a88",
+            "transparency": 0.75,
+            "colorPalette": "default",
+            "customPalette": {
+              "id": "__dku_custom__",
+              "name": "Custom palette",
+              "colors": [],
+              "values": [],
+              "fixedValues": false
+            },
+            "customColors": {}
+          },
+          "numberOfRecords": 1000000.0
+        },
+        "mapOptions": {
+          "tilesLayer": "mapquest-std",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "radarOptions": {
+          "filled": false,
+          "polygonsSource": "MEASURES",
+          "lineStyle": {
+            "width": 2.0,
+            "type": "SOLID"
+          }
+        },
+        "sankeyOptions": {
+          "curveness": 0.5,
+          "linkColorVariant": "GRADIENT"
+        },
+        "gaugeOptions": {
+          "displayPointer": false
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABsUlEQVRoQ2NkGGGAkZb+lS/fsh9k/sNOH0da2kOK2aMehoUWKHYojZkhFcOjHiYlo0DVjsYwGYFGbS04C63RJE1GUI8maTICjdpaBjxJUysVgMz584+x92m39xZ8gTTqYXo3PEZjmMxMO5qkcQQc2XlYvGSdGAcLu+3DDu+1uCKFmORKjBpiIp3mMSxVvlmOlYFxIb4OBjGeIUbNqIexhMCwimFiUgHdPNwfYMIQZCmBdUQD5tBef5MrIVYSudiSJrGeITRyMqg8TEygUKMsoGlLC1ZoEeMZYtRQw8OpFqoPtST45XGlOFAqIbtaGpYeBsUMwz+G8CBriVfo+W/UwziqCpAwMUmaGDWEkj3FSZqeMUyMhwmpGfUwllSHt9CiZgwHblfdBi4lmz53I7sDVg8Tij1issagiuHAHapgfzI2fkZppCB7GKzm//+DjE1fGsgJFLp5mGjP0MnDIPegBywsAKmSpOnpYVyeAaUUWAxT5GGvfRY/2X+9ZUcPMeR6eNTDaFMtoAKJ6EAhkIdHYxgpcEeTNDn18GgehobasCu0iBk4G4pqaLrGYzAGyIjzMAAFf2RW6F+H1QAAAABJRU5ErkJggg==",
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT",
+        "id": "ace9acea"
+      }
+    }
+  ],
+  "customMeasures": [],
+  "labels": []
+}

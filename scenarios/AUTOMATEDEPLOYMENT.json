@@ -1,0 +1,88 @@
+{
+  "type": "step_based",
+  "name": "Automate Deployment",
+  "active": false,
+  "runAsUser": "yuki.shimada@dataiku.com",
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": [
+      {
+        "id": "bundle null",
+        "type": "prepare_bundle",
+        "name": "Step #1",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "bundleId": "auto_deploy",
+          "transmogrify": true,
+          "targetVariable": "bundle_id",
+          "publishedProjectKey": "TUT_TESTING",
+          "publishOnDeployer": true
+        }
+      },
+      {
+        "id": "deploy TUT_TESTING-on-xops-qa",
+        "type": "update_projectdeployer_deployment",
+        "name": "QA Automation node update",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "deploymentId": "TUT_TESTING-on-xops-qa",
+          "newVersionId": "${bundle_id}"
+        }
+      },
+      {
+        "id": "deploy TUT_TESTING-on-xops-prod",
+        "type": "update_projectdeployer_deployment",
+        "name": "Prod Automation node update",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "deploymentId": "TUT_TESTING-on-xops-prod",
+          "newVersionId": "${bundle_id}"
+        }
+      }
+    ]
+  },
+  "automationLocal": false,
+  "customFields": {},
+  "markedAsTest": false,
+  "__dku_object_version__": 1
+}

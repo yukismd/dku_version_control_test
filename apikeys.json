@@ -1,0 +1,108 @@
+[
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [
+          "Labelled_customers_within_segments"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "labelled_customers"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "labelled_customers_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "revenue_loss"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "test_input_labelled_customers"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "test_input_unlabelled_customers"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "test_reference_labelled_customers_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "test_reference_revenue_loss_ko"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "test_reference_revenue_loss_ok"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "unlabeled_customers"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "unlabeled_customers_churn_prediction"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "unlabeled_customers_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "unlabeled_customers_within_segments"
+        ],
+        "privileges": []
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "editPermissions": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "IZs9TzL",
+    "expiresOn": 0,
+    "id": "FvULns3gdIKTHpbo",
+    "key": "sha256:9arV0lQJ:4d1d8fed0063a561c05680b3e869f562da37a417dcf375c0a36d0354987ba621",
+    "label": "Key for Web app WeApp to Test(IZs9TzL)",
+    "createdOn": 1733833537070
+  }
+]

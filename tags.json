@@ -1,0 +1,78 @@
+{
+  "tags": {
+    "Category B:A5": {
+      "color": "#94be8e"
+    },
+    "Category B:A3": {
+      "color": "#FFD83D"
+    },
+    "sample_project": {
+      "color": "#d66b9b"
+    },
+    "duplicated": {
+      "color": "#3A85AD"
+    },
+    "downloads": {
+      "color": "#de1ea5"
+    },
+    "imported": {
+      "color": "#263238"
+    },
+    "department:engineering": {
+      "color": "#94be8e"
+    },
+    "SAMPLE_PROJECT": {
+      "color": "#1ac2ab"
+    },
+    "tutorial": {},
+    "gallery": {
+      "color": "#FFD83D"
+    },
+    "academy": {},
+    "creator_admin": {
+      "color": "#1ac2ab"
+    },
+    "Testing": {
+      "color": "#d66b9b"
+    },
+    "Category A:C2": {
+      "color": "#94be8e"
+    },
+    "Category B:A_merged": {
+      "color": "#a088bd"
+    },
+    "Category A:A1": {
+      "color": "#90a8b7"
+    },
+    "Category A:C1": {
+      "color": "#00a55a"
+    },
+    "Category A:A4": {
+      "color": "#94be8e"
+    },
+    "sample": {
+      "color": "#123883"
+    },
+    "Category B:B_merged": {
+      "color": "#123883"
+    },
+    "department:marketing": {
+      "color": "#1ac2ab"
+    },
+    "Category A:A5": {
+      "color": "#a088bd"
+    },
+    "department:sales": {
+      "color": "#90a8b7"
+    },
+    "Category A:A2": {
+      "color": "#0f6d82"
+    },
+    "Category A:A3": {
+      "color": "#00a55a"
+    },
+    "within_dss:Use cases": {
+      "color": "#d66b9b"
+    }
+  }
+}

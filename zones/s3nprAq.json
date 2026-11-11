@@ -1,0 +1,49 @@
+{
+  "name": "Scoring",
+  "color": "#31439C",
+  "items": [
+    {
+      "objectId": "unlabeled_customers",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unlabeled_customers_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unlabeled_customers_within_segments",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unlabeled_customers_churn_prediction",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "revenue_loss",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "prepare_unlabeled_customers_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "score_unlabeled_customers_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "score_unlabeled_customers_in_segments",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "prepare_revenue_loss",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "position": {},
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

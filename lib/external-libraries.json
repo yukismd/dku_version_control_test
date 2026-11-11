@@ -1,0 +1,22 @@
+{
+  "gitReferences": {
+    "python/dku_libs": {
+      "remote": "git@github.com:fsergot/dku_libs.git",
+      "checkout": "refs/tags/v2",
+      "remotePath": "",
+      "lastHash": "9a352cf8716854e8ff93f19de5061a550c11fc26",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
+      "isDirty": false
+    }
+  },
+  "pythonPath": [
+    "python",
+    "python/dku_libs"
+  ],
+  "rsrcPath": [
+    "R"
+  ],
+  "importLibrariesFromProjects": []
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Monitoring",
+  "color": "#F9BE40",
+  "items": [
+    {
+      "objectId": "ciEi3NNk",
+      "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "evaluate_on_unlabeled_customers_churn_prediction",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "position": {},
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "step_based",
+  "name": "Python Test",
+  "active": false,
+  "runAsUser": "yuki.shimada@dataiku.com",
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": []
+  },
+  "automationLocal": false,
+  "customFields": {},
+  "markedAsTest": false,
+  "__dku_object_version__": 1
+}
