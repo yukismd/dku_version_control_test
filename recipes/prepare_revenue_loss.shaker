@@ -1,6 +1,116 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "State"
+      },
+      {
+        "d": true,
+        "name": "Account_Length"
+      },
+      {
+        "d": true,
+        "name": "Area_Code"
+      },
+      {
+        "d": true,
+        "name": "Phone"
+      },
+      {
+        "d": true,
+        "name": "Intl_Plan"
+      },
+      {
+        "d": true,
+        "name": "VMail_Plan"
+      },
+      {
+        "d": true,
+        "name": "VMail_Message"
+      },
+      {
+        "d": true,
+        "name": "Day_Mins"
+      },
+      {
+        "d": true,
+        "name": "Day_Calls"
+      },
+      {
+        "d": true,
+        "name": "Day_Charge"
+      },
+      {
+        "d": true,
+        "name": "Eve_Mins"
+      },
+      {
+        "d": true,
+        "name": "Eve_Calls"
+      },
+      {
+        "d": true,
+        "name": "Eve_Charge"
+      },
+      {
+        "d": true,
+        "name": "Night_Mins"
+      },
+      {
+        "d": true,
+        "name": "Night_Calls"
+      },
+      {
+        "d": true,
+        "name": "Night_Charge"
+      },
+      {
+        "d": true,
+        "name": "Intl_Mins"
+      },
+      {
+        "d": true,
+        "name": "total_Mins"
+      },
+      {
+        "d": true,
+        "name": "Intl_Calls"
+      },
+      {
+        "d": true,
+        "name": "Intl_Charge"
+      },
+      {
+        "d": true,
+        "name": "Total_Charge"
+      },
+      {
+        "d": true,
+        "name": "CustServ_Calls"
+      },
+      {
+        "d": true,
+        "name": "cluster_labels"
+      },
+      {
+        "d": true,
+        "name": "proba_0"
+      },
+      {
+        "d": true,
+        "name": "proba_1"
+      },
+      {
+        "d": true,
+        "name": "prediction"
+      },
+      {
+        "d": true,
+        "name": "revenue_loss"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -28,6 +138,7 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "columnOrder": [],
   "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
@@ -40,8 +151,9 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "prediction * ( Total_Charge - (proba_0 * Total_Charge))",
-        "column": "revenue_loss"
+        "expression": "prediction * ( Total_Charge - (proba_1 * Total_Charge))",
+        "column": "revenue_loss",
+        "errorColumn": ""
       },
       "alwaysShowComment": false
     }
@@ -72,6 +184,7 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "flagNumericValues": true,
   "columnWidthsByName": {
     "Night_Charge": 134,
     "Intl_Mins": 134,
@@ -106,6 +219,7 @@
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
+    "coloringGroups": [],
     "valueColoringMode": "HASH",
     "individualColumnsRules": []
   }
