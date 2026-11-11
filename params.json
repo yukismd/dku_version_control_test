@@ -152,7 +152,7 @@
     "users": []
   },
   "tutorialProject": true,
-  "tutorialId": "DKU_CHURN",
+  "tutorialId": "TUT_TESTING",
   "settings": {
     "flowAnchorSourcesAndSinks": true,
     "flowDisplaySettings": {
@@ -322,7 +322,8 @@
       "chosenToolIds": []
     }
   },
-  "name": "Test Scenarios",
+  "name": "Test Scenarios for yuki.shimada",
+  "projectStatus": "Sandbox",
   "imgPattern": 4,
   "showInitials": false,
   "metrics": {
