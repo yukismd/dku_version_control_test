@@ -19,6 +19,6 @@
   },
   "automationLocal": false,
   "customFields": {},
-  "markedAsTest": false,
+  "markedAsTest": true,
   "__dku_object_version__": 1
 }
