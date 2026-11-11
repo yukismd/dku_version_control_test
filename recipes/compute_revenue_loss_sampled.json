@@ -14,9 +14,9 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "FULL",
+      "samplingMethod": "RANDOM_FIXED_RATIO",
       "maxRecords": -1,
-      "targetRatio": 0.02,
+      "targetRatio": 0.5,
       "ascending": true,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
