@@ -54,7 +54,7 @@
     "main": {
       "items": [
         {
-          "ref": "unlabeled_customers",
+          "ref": "test_input_unlabelled_customers",
           "deps": []
         }
       ]

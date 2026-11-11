@@ -28,6 +28,7 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
+  "columnOrder": [],
   "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
@@ -408,6 +409,7 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "flagNumericValues": true,
   "columnWidthsByName": {
     "Night_Charge": 134,
     "Intl_Mins": 134,
@@ -438,6 +440,7 @@
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
+    "coloringGroups": [],
     "valueColoringMode": "HASH",
     "individualColumnsRules": []
   }
