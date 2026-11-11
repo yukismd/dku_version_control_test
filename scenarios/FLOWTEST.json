@@ -15,7 +15,44 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "flow_test__build___swap_(unlabeled_customers,test_input_unlabelled_customers)__compare",
+        "type": "flow_test",
+        "name": "Step #1",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "swaps": [
+            {
+              "sourceSmartName": "unlabeled_customers",
+              "targetSmartName": "test_input_unlabelled_customers"
+            },
+            {
+              "sourceSmartName": "revenue_loss",
+              "targetSmartName": "test_reference_revenue_loss"
+            }
+          ],
+          "compares": [],
+          "builds": [],
+          "jobType": "RECURSIVE_BUILD",
+          "autoUpdateSchemaBeforeEachRecipeRun": false,
+          "stopAtFlowZoneBoundary": false,
+          "refreshHiveMetastore": true,
+          "handleWarningsAs": "WARNING",
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {},
