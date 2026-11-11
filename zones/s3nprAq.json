@@ -37,6 +37,14 @@
     {
       "objectId": "prepare_revenue_loss",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_revenue_loss_sampled",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "revenue_loss_sampled",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
