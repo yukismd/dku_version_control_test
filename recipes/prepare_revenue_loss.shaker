@@ -146,12 +146,12 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "prediction * ( Total_Charge - (proba_1 * Total_Charge))",
+        "expression": "prediction * ( Total_Charge - (proba_0 * Total_Charge))",
         "column": "revenue_loss",
         "errorColumn": ""
       },
