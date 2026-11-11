@@ -34,7 +34,8 @@
         "params": {
           "testsSelector": "python/test",
           "envSelection": {
-            "envMode": "INHERIT"
+            "envMode": "EXPLICIT_ENV",
+            "envName": "pytest"
           },
           "logLevel": "WARNING",
           "proceedOnFailure": false
